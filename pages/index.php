@@ -46,6 +46,9 @@
 </div>
 </div> 
 </div> 
+<h5>Il nostro sito è un'utile risorsa per coloro che stanno cercando il modo più efficiente ed economico per riscaldare la propria casa. Utilizzando i dati del consumo di corrente e gas, il sito offre una panoramica completa dei vari metodi di riscaldamento disponibili e confronta i loro costi e benefici.
+Attraverso un'interfaccia facile da usare, gli utenti possono inserire i loro consumi mensili di corrente e gas, è verra mostrato agli utenti quali metodi di riscaldamento sono più economici a seconda dei loro consumi
+</h5>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>

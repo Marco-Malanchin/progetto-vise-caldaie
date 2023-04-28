@@ -18,11 +18,12 @@
         </div>
     </div>
 
+    <?php require_once(__DIR__.'../navbar.php'); ?>
     <div class="container mt-5">
         <form method="post" class="text-center" id="myform">
             <div class="information-container text-center">
-                <h2>Benvenuto Utente su</h2>
-                <h2>IL SEGUGIO DELLE BOLLETTE</h2>
+                <h2>Benvenuto Utente sul calcolo bollette</h2>
+                <h2></h2>
                 <br>
 
                 <div class="row mb-3">
