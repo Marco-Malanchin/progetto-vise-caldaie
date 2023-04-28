@@ -27,7 +27,7 @@
                 <br>
 
                 <div class="row mb-3">
-                    <label class="form-label">Tipologia del corso:</label>
+                    <label class="form-label">consumo corrente:</label>
                     <input class="col-6 offset-3" type="text" onkeypress="return isNumber(event)" placeholder="Kw" name="corrente">
                 </div>
 
