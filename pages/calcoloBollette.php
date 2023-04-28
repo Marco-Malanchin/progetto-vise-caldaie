@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <?php require_once(__DIR__.'../navbar.php'); ?>
+    <?php require_once(__DIR__ . '../navbar.php'); ?>
     <div class="container mt-5">
         <form method="post" class="text-center" id="myform">
             <div class="information-container text-center">
@@ -36,7 +36,7 @@
                     <input class="col-6 offset-3" type="text" onkeypress="return isNumber(event)" placeholder="SMC" name="gas">
                 </div>
 
-                <button type="submit" class="btn btn-primary mb-5" onclick="Loading()">Calcola</button>
+                <button class="btn btn-primary mb-5" onclick="Loading()">Calcola</button>
         </form>
         <br>
         <?php
@@ -65,6 +65,8 @@
                     <div class="row">
                         <div class="text-center">
                             <?php
+                            $nome = $bollette->intGetMetodoRiscaldamento();
+                            echo ($bollette->ToString());
                             echo $bollette->intToString();
                             echo ("<hr>");
                             ?>
@@ -100,6 +102,7 @@
                 console.log("Loading..");
                 $("#pageloader").hide();
             }, 1000 * 1);
+            $("#myform").submit();
         }
     </script>
 
@@ -124,7 +127,7 @@
 
     #spinner {
         left: 50%;
-        margin-left: px;
+        margin-left: -32px;
         margin-top: -32px;
         position: absolute;
         top: 50%;
