@@ -19,7 +19,7 @@
     </div>
 
     <?php require_once(__DIR__ . '../navbar.php'); ?>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <form method="post" class="text-center" id="myform">
             <div class="information-container text-center">
                 <h2>Benvenuto Utente sul calcolo bollette</h2>
@@ -60,24 +60,88 @@
         ?>
         <br>
         <?php if (isset($data)) : ?>
-            <div class="container-response">
-                <?php foreach ($data as $bollette) : ?>
-                    <div class="row">
-                        <div class="text-center">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                             <?php
-                            $nome = $bollette->intGetMetodoRiscaldamento();
-                            echo ($bollette->ToString());
-                            echo $bollette->intToString();
-                            echo ("<hr>");
+                            $nome = $data[0]->intGetMetodoRiscaldamento();
+                            echo ($nome->ToString());
+                            ?>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <?php echo $data[0]->intToString();
                             ?>
                         </div>
                     </div>
-                <?php
-                endforeach ?>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <?php
+                            $nome = $data[1]->intGetMetodoRiscaldamento();
+                            echo ($nome->ToString());
+                            ?>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <?php echo $data[1]->intToString();
+                            ?>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                <?php
+                                $nome = $data[2]->intGetMetodoRiscaldamento();
+                                echo ($nome->ToString());
+                                ?> </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <?php echo $data[2]->intToString();
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                <?php
+                                $nome = $data[3]->intGetMetodoRiscaldamento();
+                                echo ($nome->ToString());
+                                ?> </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <?php echo $data[3]->intToString();
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                <?php
+                                $nome = $data[4]->intGetMetodoRiscaldamento();
+                                echo ($nome->ToString());
+                                ?> </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <?php echo $data[4]->intToString();
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         <?php endif ?>
     </div>
-    </div>
+
     <script>
         function isNumber(evt) {
             evt = (evt) ? evt : window.event;
