@@ -14,8 +14,7 @@
     <?php require_once(__DIR__ . '../navbar.php'); ?>
     <div class="container mt-5">
         <div class="row">
-            <h3>Ciao, <b>User</b>.</h3>
-            <h3>Benvenuto! </h3>
+            <h3>Ciao, Benvenuto!</h3>
         </div>
 
     </div>

@@ -19,6 +19,9 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="calcoloBollette.php">Calcolo Bollette</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="help.php">Aiuto</a>
+            </li>
         </ul>
     </div>
     </div>
