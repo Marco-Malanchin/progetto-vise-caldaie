@@ -21,7 +21,7 @@
     <div class="container mt-5 mb-3">
         <form method="post" class="text-center" id="myform">
             <div class="information-container text-center">
-                <h2>Benvenuto Utente sul calcolo bollette</h2>
+                <h2>Benvenuto sul calcolo bollette</h2>
                 <h2></h2>
                 <br>
 
