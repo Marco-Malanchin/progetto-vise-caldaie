@@ -70,7 +70,9 @@
                         nostro strumento ti aiuterà a capire quale metodo di riscaldamento fa al caso vostro.
                     </span>
                 </div>
-                <button class="btn btn-primary mt-3 mb-3">Prova ora!</button>
+                <a href="calcoloBollette.php">
+                    <button class="btn btn-primary mt-3 mb-3">Prova ora!</button>
+                </a>
             </div>
             <div class="col d-flex justify-content-center">
                 <img
@@ -91,14 +93,14 @@
                     <button class="btn btn-danger">ENEL Energia</button>
                 </a>
                 <a
-                    href="https://www.enel.it/?ecid=paidsearch-google-alwayson_top_keyword-brand-enel_exact&gclid=CjwKCAjwjMiiBhA4EiwAZe6jQ2H-wWbkl6mCTveS3z62HzbBN1zY40fStEoKaBFUnqlLdIWtlMkaHhoCwnoQAvD_BwE&gclsrc=aw.ds">
+                    href="https://casa.a2aenergia.eu/a2a-click?fnt=gadwords&dfnt=clicktolp&utm_medium=cpc&utm_source=google&utm_campaign=01012023_a2aclick_31122023&utm_content=clicktolp&gad=1&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZxitIPJryicw-r9x7JK4fI8LZEWDA6prF1MuV8U4B19PrNYSvGM7ekaAjiDEALw_wcB&gclsrc=aw.ds">
                     <button class="btn btn-primary">A2A Energia</button>
                 </a>
                 <a
-                    href="https://www.enel.it/?ecid=paidsearch-google-alwayson_top_keyword-brand-enel_exact&gclid=CjwKCAjwjMiiBhA4EiwAZe6jQ2H-wWbkl6mCTveS3z62HzbBN1zY40fStEoKaBFUnqlLdIWtlMkaHhoCwnoQAvD_BwE&gclsrc=aw.ds">
+                    href="https://offerta.acea.it/flexy-special-web?utm_source=GoogleAds&utm_medium=cpc&utm_campaign=Performance-FlexyWebBio&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZzD43--3zmgu89EjaPHgP5Mig8fgfmTJQpDLKg6mYXfzWX49ZxqK70aAs2sEALw_wcB&adfcd=1683205666.hsa4AstYE0Og27B5KKFcaA.MTQ4ODY0OCw0MDkzNzc">
                     <button class="btn btn-warning">ACEA Energia</button>
                 </a> <a
-                    href="https://www.enel.it/?ecid=paidsearch-google-alwayson_top_keyword-brand-enel_exact&gclid=CjwKCAjwjMiiBhA4EiwAZe6jQ2H-wWbkl6mCTveS3z62HzbBN1zY40fStEoKaBFUnqlLdIWtlMkaHhoCwnoQAvD_BwE&gclsrc=aw.ds">
+                    href="https://eniplenitude.com/offerta/casa/gas-e-luce/trend?&&&&gad=1&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZy_IM_ZsK5JgJW1odKq73RYemcjkPLmDRfTYozVGsevJoE4pjQtSE8aAjdTEALw_wcB&gclsrc=aw.ds">
                     <button class="btn btn-success">PLENITUDE Energia</button>
                 </a>
             </div>
