@@ -51,7 +51,17 @@
                 echo '<p class="pt-3 pb-3 text-center fw-bold">!!! non puoi inserire entrambi i consumi pari a zero !!!'; ?>
             </div>
     <?php
-        } else {
+        }   
+        elseif ((($_POST['corrente'] == NULL )&& ($_POST['gas'] == NULL )) || ($_POST['corrente'] == NULL )|| ($_POST['gas'] == NULL) ){
+            ?>
+            <div class="alert alert-danger" role="alert">
+                <?php
+                echo '<p class="pt-3 pb-3 text-center fw-bold">!!! compila tutti i dati !!!'; ?>
+            </div>
+    <?php
+            
+        }
+         else {
             $data = calcolaBollette(intval($_POST['corrente']), intval($_POST['gas']));
             $nome = $data[0]->intGetMetodoRiscaldamento();
         }

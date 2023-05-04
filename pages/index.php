@@ -10,8 +10,6 @@
     <link rel="icon" type="image/x-icon" href="../style/logo.jpg">
 </head>
 
-<body>
-    <?php require_once(__DIR__ . '../navbar.php'); ?>
     <!--
     <div class="container mt-5">
         <div class="row">
@@ -59,8 +57,15 @@
         </div>
     </div>
 -->
-
+<body>
+    <?php require_once(__DIR__ . '../navbar.php'); ?>
     <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-2" >
+                <div class="col-md-4 offset-md-4 mt-1">
+            <img class="img-fluid"
+                src="../style/segugio-logo.png">
+        </div>
+</div>
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-2" style="height: auto">
             <div class="col">
                 <div>
@@ -80,35 +85,10 @@
 
             </div>
         </div>
-        <hr class="mt-3">
-        <div>
-            <span>
-                Scopri la tua convenienza e contatta subito una delle aziende che troverai qui sotto, approfitta
-                della nostra collaborazione e ricevere degli sconti sulle offerte che ti faranno!
-            </span>
 
-            <div class="mt-4 d-flex justify-content-between">
-                <a
-                    href="https://www.enel.it/?ecid=paidsearch-google-alwayson_top_keyword-brand-enel_exact&gclid=CjwKCAjwjMiiBhA4EiwAZe6jQ2H-wWbkl6mCTveS3z62HzbBN1zY40fStEoKaBFUnqlLdIWtlMkaHhoCwnoQAvD_BwE&gclsrc=aw.ds">
-                    <button class="btn btn-danger">ENEL Energia</button>
-                </a>
-                <a
-                    href="https://casa.a2aenergia.eu/a2a-click?fnt=gadwords&dfnt=clicktolp&utm_medium=cpc&utm_source=google&utm_campaign=01012023_a2aclick_31122023&utm_content=clicktolp&gad=1&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZxitIPJryicw-r9x7JK4fI8LZEWDA6prF1MuV8U4B19PrNYSvGM7ekaAjiDEALw_wcB&gclsrc=aw.ds">
-                    <button class="btn btn-primary">A2A Energia</button>
-                </a>
-                <a
-                    href="https://offerta.acea.it/flexy-special-web?utm_source=GoogleAds&utm_medium=cpc&utm_campaign=Performance-FlexyWebBio&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZzD43--3zmgu89EjaPHgP5Mig8fgfmTJQpDLKg6mYXfzWX49ZxqK70aAs2sEALw_wcB&adfcd=1683205666.hsa4AstYE0Og27B5KKFcaA.MTQ4ODY0OCw0MDkzNzc">
-                    <button class="btn btn-warning">ACEA Energia</button>
-                </a> <a
-                    href="https://eniplenitude.com/offerta/casa/gas-e-luce/trend?&&&&gad=1&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZy_IM_ZsK5JgJW1odKq73RYemcjkPLmDRfTYozVGsevJoE4pjQtSE8aAjdTEALw_wcB&gclsrc=aw.ds">
-                    <button class="btn btn-success">PLENITUDE Energia</button>
-                </a>
-            </div>
-        </div>
-        <hr>
         <div>
             <img class="img-fluid"
-                src="https://img-prod.tgcom24.mediaset.it/images/2022/09/13/200903627-613cd832-3064-47b1-bc56-a91a74453eeb.jpg">
+                src="../style/risparmio.jpg">
         </div>
     </div>
 
