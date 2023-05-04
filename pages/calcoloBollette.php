@@ -68,8 +68,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button" style="background-color: #0FFF0F; color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                                     <?php
-                                    $nome = $data[0]->intGetMetodoRiscaldamento();
-                                    echo ($nome->ToString());
+                                    echo ($data[0]->intGetNomeMetodoRiscaldamento());
                                     ?>
                                 </button>
                             </h2>
@@ -84,8 +83,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" style="background-color: #4BD21E; color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                     <?php
-                                    $nome = $data[1]->intGetMetodoRiscaldamento();
-                                    echo ($nome->ToString());
+                                    echo ($data[1]->intGetNomeMetodoRiscaldamento());
                                     ?>
                                 </button>
                             </h2>
@@ -100,8 +98,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" style="background-color: #87A52D; color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                                     <?php
-                                    $nome = $data[2]->intGetMetodoRiscaldamento();
-                                    echo ($nome->ToString());
+                                    echo ($data[2]->intGetNomeMetodoRiscaldamento());
                                     ?> </button>
                             </h2>
                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
@@ -115,8 +112,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" style="background-color: #C3773B; color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                                     <?php
-                                    $nome = $data[3]->intGetMetodoRiscaldamento();
-                                    echo ($nome->ToString());
+                                    echo ($data[3]->intGetNomeMetodoRiscaldamento());
                                     ?> </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
@@ -130,8 +126,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" style="background-color: #FF4A4A; color: black;" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
                                     <?php
-                                    $nome = $data[4]->intGetMetodoRiscaldamento();
-                                    echo ($nome->ToString());
+                                    echo ($data[4]->intGetNomeMetodoRiscaldamento());
                                     ?> </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
@@ -154,16 +149,11 @@
                         new Chart(ctx, {
                             type: 'bar',
                             data: {
-                                labels: ['<?php $nome = $data[0]->intGetMetodoRiscaldamento();
-                                            echo ($nome->ToString()) ?>',
-                                    '<?php $nome = $data[1]->intGetMetodoRiscaldamento();
-                                        echo ($nome->ToString()); ?>',
-                                    '<?php $nome = $data[2]->intGetMetodoRiscaldamento();
-                                        echo ($nome->ToString()); ?>',
-                                    '<?php $nome = $data[3]->intGetMetodoRiscaldamento();
-                                        echo ($nome->ToString()); ?>',
-                                    '<?php $nome = $data[4]->intGetMetodoRiscaldamento();
-                                        echo ($nome->ToString()); ?>',
+                                labels: ['<?php echo ($data[0]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[1]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[2]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[3]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[4]->intGetNomeMetodoRiscaldamento()); ?>',
                                 ],
                                 datasets: [{
                                     label: '#Costo bolletta mensile',
@@ -213,25 +203,20 @@
             new Chart(grafico, {
                 type: 'bar',
                 data: {
-                    labels: ['<?php $nome = $data[0]->intGetMetodoRiscaldamento();
-                                echo ($nome->ToString()) ?>',
-                        '<?php $nome = $data[1]->intGetMetodoRiscaldamento();
-                            echo ($nome->ToString()); ?>',
-                        '<?php $nome = $data[2]->intGetMetodoRiscaldamento();
-                            echo ($nome->ToString()); ?>',
-                        '<?php $nome = $data[3]->intGetMetodoRiscaldamento();
-                            echo ($nome->ToString()); ?>',
-                        '<?php $nome = $data[4]->intGetMetodoRiscaldamento();
-                            echo ($nome->ToString()); ?>',
-                    ],
+                    labels: ['<?php echo ($data[0]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[1]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[2]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[3]->intGetNomeMetodoRiscaldamento()); ?>',
+                                    '<?php echo ($data[4]->intGetNomeMetodoRiscaldamento()); ?>',
+                                ],
                     datasets: [{
                         label: '#Investimento iniziale',
-                        data: [<?php //echo ($data[0]->intGetTotale()); 
-                                ?>,
-                            <?php echo ($data[1]->intGetTotale()); ?>,
-                            <?php echo ($data[2]->intGetTotale()); ?>,
-                            <?php echo ($data[3]->intGetTotale()); ?>,
-                            <?php echo ($data[4]->intGetTotale()); ?>
+                        data: [
+                            <?php echo ($data[0]->intGetCostoTotalPlusInstallazione()); ?>,
+                            <?php echo ($data[1]->intGetCostoTotalPlusInstallazione()); ?>,
+                            <?php echo ($data[2]->intGetCostoTotalPlusInstallazione()); ?>,
+                            <?php echo ($data[3]->intGetCostoTotalPlusInstallazione()); ?>,
+                            <?php echo ($data[4]->intGetCostoTotalPlusInstallazione()); ?>
                         ],
                         backgroundColor: [
                             'rgba(15, 255, 15, 0.7)',

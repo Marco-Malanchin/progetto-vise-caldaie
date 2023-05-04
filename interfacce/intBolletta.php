@@ -28,6 +28,7 @@ class intBolletta
         $this->Bolletta->CalcolaBolletta();
     }
 
+    //return costo bolletta
     public function intGetTotale()
     {
         return $this->Bolletta->GetTotale();
@@ -49,12 +50,21 @@ class intBolletta
         return $this->Bolletta->GetMetodoRiscaldamento();
     }
 
-    public function intGetCostoTotalPlusInstellazione()
+    //return costo bolletta + costo installazione
+    public function intGetCostoTotalPlusInstallazione()
     {
-        return $this->Bolletta->GetCostoTotalPlusInstellazione();
+        return $this->Bolletta->GetCostoTotalPlusInstallazione();
     }
+    
+    //return costo installazione
+
     public function intGetCostoInstallazione()
     {
         return $this->Bolletta->GetCostoInstallazione();
+    }
+
+    public function intGetNomeMetodoRiscaldamento()
+    {
+        return $this->Bolletta->GetNomeMetodoRiscaldamento();
     }
 }

@@ -3,7 +3,7 @@ class PompaCaloreBuona extends Riscaldamento
 {
     public function __construct()
     {
-        $this->costoInstallazione = 1000;
+        $this->costoInstallazione = 3000;
         $this->rendimento =3.6;
         $this->costoAnnuale = 0.276;
         $this->materiaPrima = "Corrente";

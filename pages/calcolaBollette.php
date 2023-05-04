@@ -6,7 +6,6 @@ require_once dirname(__FILE__) . "..\..\interfacce\createClassesAndInterfaces.ph
 //function calcolaBollette1($consumoKw, $consumoSMC)
 function calcolaBollette($consumoKw, $consumoSMC)
 {
-
     $SMCTotali = ($consumoKw / 10.7) + $consumoSMC;                      //calcolo smc e kwh totali
     $KWhTotali = ($consumoSMC * 10.7) + $consumoKw;
 
@@ -42,12 +41,11 @@ function calcolaBollette($consumoKw, $consumoSMC)
         }
     }
 
-    return $bolletteRiscaldamento;
     foreach ($bolletteRiscaldamento as $bollette) {
 
         $bollette->intCalcolaBolletta();
     }
-
+    
     sort($bolletteRiscaldamento);
 
     return $bolletteRiscaldamento;

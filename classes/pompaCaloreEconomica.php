@@ -3,7 +3,7 @@ class PompaCaloreEconomica extends Riscaldamento
 {
     public function __construct()
     {
-        $this->costoInstallazione = 3000;
+        $this->costoInstallazione = 1000;
         $this->rendimento = 2.8;
         $this->costoAnnuale = 0.276;
         $this->materiaPrima = "Corrente";

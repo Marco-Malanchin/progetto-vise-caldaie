@@ -29,7 +29,7 @@ class Bolletta
 
     public function __toString()
     {
-        return "\nCosto bolletta " . $this->metodoRiscaldamento->ToString() . ": " . round($this->totale, 4) + $this->installazione . "€ per il primo anno, di cui " . $this->installazione . "€ per l'installazione, per gli anni successivi il prezzo sarebbe pari a " . round($this->totale, 4) . "€\n";
+        return "\nCosto bolletta " . $this->metodoRiscaldamento->ToString() . ": <b>" . round($this->totale, 4) + $this->installazione . "€</b> per il primo anno, di cui <b>" . $this->installazione . "€</b> per l'installazione, per gli anni successivi il prezzo sarebbe pari a <b>" . round($this->totale, 4) . "€</b>\n";
     }
 
     public function CalcolaBolletta()
@@ -58,7 +58,7 @@ class Bolletta
         return $this->metodoRiscaldamento;
     }
     // da segnare sulla relazione
-    public function GetCostoTotalPlusInstellazione()
+    public function GetCostoTotalPlusInstallazione()
     {
         return (round($this->totale, 4) + $this->installazione);
     } //Costo totale
@@ -66,5 +66,9 @@ class Bolletta
     public function GetCostoInstallazione()
     {
         return $this->installazione;
+    }
+    //return nome del metodo di riscaldamento
+    public function GetNomeMetodoRiscaldamento(){
+        return $this->metodoRiscaldamento->ToString();
     }
 }
