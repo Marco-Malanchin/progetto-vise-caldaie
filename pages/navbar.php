@@ -22,6 +22,15 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="help.php">Aiuto</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="log.php">Amministrazione</a>
+            </li>
+
+            <?php if(str_contains($_SERVER['REQUEST_URI'],"log.php")){ ?>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="logout.php">logout</a>
+            </li>
+            <?php   } ?>
         </ul>
     </div>
     </div>

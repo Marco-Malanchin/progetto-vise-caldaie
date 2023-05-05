@@ -48,47 +48,10 @@ function calcolaBollette($consumoKw, $consumoSMC)
     
     sort($bolletteRiscaldamento);
 
+    //salva sul log i consumi degli utenti 
+    $path=dirname(__FILE__)."..\..\log\log.txt";
+    file_put_contents($path,"\r".$consumoKw.";".$consumoSMC,FILE_APPEND);
+
+    //return dell'array di bollette 
     return $bolletteRiscaldamento;
 }
-/*
-//return di tutta la stringa con i tre valori
-function calcolaBollette($consumoKw,$consumoSMC){
-    $bolletteRiscaldamento = calcolaBollette1($consumoKw,$consumoSMC);
-    foreach($bolletteRiscaldamento as $bollette){
-
-        $bollette->intCalcolaBolletta();
-
-    }
-
-    sort($bolletteRiscaldamento);
-    
-    return $bolletteRiscaldamento;
-}
-
-//return sol costi bolletta 
-function calcolaCostoBolletta($consumoKw,$consumoSMC){
-    $bolletteRiscaldamento = calcolaBollette1($consumoKw,$consumoSMC);
-    foreach($bolletteRiscaldamento as $bollette){
-
-        $bollette->intGetTotale();
-
-    }
-
-    sort($bolletteRiscaldamento);
-    
-    return $bolletteRiscaldamento;
-}
-
-//
-function calcolaBollettePerInstallazione($consumoKw,$consumoSMC){
-    $bolletteRiscaldamento = calcolaBollette1($consumoKw,$consumoSMC);
-    foreach($bolletteRiscaldamento as $bollette){
-
-        $bollette->intGetCostoInstallazione();
-
-    }
-
-    sort($bolletteRiscaldamento);
-    
-    return $bolletteRiscaldamento;
-}*/
